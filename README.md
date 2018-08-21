@@ -1,6 +1,6 @@
-# nuxt-init
+# Hello-Nuxt
 
-> Hello world
+> Nuxt Vue.js boilerplate.
 
 ## Build Setup
 

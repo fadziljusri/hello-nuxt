@@ -22,7 +22,7 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://fadziljusri.github.io/Hello-Nuxt" target="_blank">
+            <a class="nav-link" href="https://github.com/fadziljusri/Hello-Nuxt" target="_blank">
               <i class="fab fa-github"></i></a>
           </li>
         </ul>
