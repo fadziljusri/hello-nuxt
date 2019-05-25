@@ -2,11 +2,11 @@
   <section>
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
       <a class="navbar-brand mr-auto mr-lg-0" href @click.prevent>Nuxt Vue.js</a>
-      <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+      <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas" @click="openToggle()">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+      <div ref="offcanvas" class="navbar-collapse offcanvas-collapse" :class="{'open': toggleOpen}" id="navbarsExampleDefault">
         <ul class="navbar-nav ml-0 ml-lg-5 mr-auto">
           <li class="nav-item active">
             <nuxt-link class="nav-link" to="/dashboard/home">Dashboard
@@ -39,13 +39,16 @@
 </template>
 
 <script>
-  import $ from "jquery";
-
   export default {
-    mounted() {
-      $('[data-toggle="offcanvas"]').on("click", function () {
-        $(".offcanvas-collapse").toggleClass("open");
-      });
+    data() {
+      return {
+        toggleOpen: false
+      }
+    },
+    methods : {
+      openToggle() {
+        this.toggleOpen = !this.toggleOpen;
+      }
     }
   };
 

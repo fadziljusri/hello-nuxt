@@ -40,14 +40,14 @@ module.exports = {
      ** Build configuration
      */
     build: {
-        vendor: ['jquery', 'bootstrap'],
+        vendor: ['bootstrap'],
         plugins: [
             // set shortcuts as global for bootstrap
-            new webpack.ProvidePlugin({
-                $: 'jquery',
-                jQuery: 'jquery',
-                'window.jQuery': 'jquery'
-            })
+            // new webpack.ProvidePlugin({
+            //     $: 'jquery',
+            //     jQuery: 'jquery',
+            //     'window.jQuery': 'jquery'
+            // })
         ],
         /*
          ** Run ESLint on save

@@ -1,4 +1,4 @@
-# Hello-Nuxt
+# Hello Nuxt
 
 > Nuxt Vue.js boilerplate.
 
@@ -22,4 +22,6 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+
+## [DEMO](https://fadziljusri.github.io/hello-nuxt)
 
